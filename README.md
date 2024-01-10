@@ -1,7 +1,7 @@
 # wso2 api manager
 Version 4.2.0
 
-# Clone repository:
+# Clone my repository:
 git clone https://github.com/rrcordero/wso2apimanager.git
 
 # Go to clone directory and run:
