@@ -16,8 +16,8 @@ WORKDIR /app
 # Descarga del repositorio
 RUN git clone -b v4.2.0 --single-branch https://github.com/wso2/product-apim.git .
 
-# Define un punto de montaje en el contenedor
-#VOLUME /app/modules/p2-profile/product/target/wso2carbon-core-4.8.1/repository/conf
+# Punto de montaje en el contenedor
+VOLUME /app/modules/p2-profile/product/target/wso2carbon-core-4.8.1/repository/conf
 
 # Ejecución maven install
 RUN mvn install -Dmaven.test.skip=true 
