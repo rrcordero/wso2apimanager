@@ -22,8 +22,10 @@ VOLUME /app/modules/p2-profile/product/target/wso2carbon-core-4.8.1/repository/c
 # Ejecución maven install
 RUN mvn install -Dmaven.test.skip=true 
 
+# Unzip del build
 RUN unzip /app/modules/distribution/product/target/wso2am-4.2.0.zip
 
+# Directorio de trabajo dentro del contenedor
 WORKDIR /app/wso2am-4.2.0/bin/
 
 # EXPOSE de puertos
