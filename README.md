@@ -17,5 +17,7 @@ docker run -p 9443:9443 -v /[local]/[directory]/conf:/app/modules/p2-profile/pro
 *  https://localhost:9443/publisher/apis
 
 *  https://localhost:9443/devportal/apis
+  
+*  https://localhost:9443/carbon/ 
 
 
